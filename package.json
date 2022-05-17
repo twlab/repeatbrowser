@@ -1,0 +1,53 @@
+{
+  "name": "svelte-app",
+  "version": "1.0.0",
+  "devDependencies": {
+    "@material/typography": "^4.0.0",
+    "@smui/button": "^1.0.0-beta.19",
+    "@smui/common": "^1.0.0-beta.19",
+    "cross-env": "^5.2.0",
+    "css-loader": "^2.1.1",
+    "mini-css-extract-plugin": "^0.6.0",
+    "node-sass": "^4.13.1",
+    "sass-loader": "^8.0.2",
+    "serve": "^11.0.0",
+    "style-loader": "^0.23.1",
+    "svelte": "^3.0.0",
+    "svelte-loader": "2.13.3",
+    "svg-inline-loader": "^0.8.0",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.3.1"
+  },
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack",
+    "dev": "webpack-dev-server --content-base public",
+    "deploy": "aws s3 sync public s3://repeat-browser"
+  },
+  "dependencies": {
+    "@gmod/bbi": "^1.0.27",
+    "@gmod/tabix": "^1.3.2",
+    "@smui/checkbox": "^1.0.0-beta.19",
+    "@smui/data-table": "^1.0.0-beta.19",
+    "@smui/form-field": "^1.0.0-beta.20",
+    "@smui/icon-button": "^1.0.0-beta.19",
+    "@smui/linear-progress": "^1.0.0-beta.19",
+    "@smui/list": "^1.0.0-beta.19",
+    "@smui/slider": "^1.0.0-beta.19",
+    "@smui/switch": "^1.0.0-beta.20",
+    "@smui/tab": "^1.0.0-beta.19",
+    "@smui/tab-bar": "^1.0.0-beta.19",
+    "awesomplete": "^1.1.5",
+    "axios": "^0.19.2",
+    "d3": "^5.15.0",
+    "generic-filehandle": "^2.0.1",
+    "ideogram": "^1.16.0",
+    "jquery": "^3.4.1",
+    "js-file-download": "^0.4.9",
+    "plotly.js": "^1.52.2",
+    "prop-types": "^15.7.2",
+    "save-svg-as-png": "^1.4.16",
+    "underscore": "^1.9.2",
+    "uuid": "^3.4.0"
+  }
+}
